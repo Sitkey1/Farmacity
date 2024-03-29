@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
   
 jobs:
@@ -17,9 +17,9 @@ jobs:
         install -m 600 -D /dev/null ~/.ssh/id_rsa
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-    # - name: connect and pull
-    #   run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.BUILD_DIR }} && git checkout ${{ secrets.BRANCH }} && git pull && npm install && npm build"
-    - name: move build folder
-      run: mv build ../../var/www
-    # - name: cleanup
-    #   run: rm -rf ~/.ssh
+    - name: connect and pull
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.BUILD_DIR }} && git checkout ${{ secrets.BRANCH }} && git pull && exit"
+    - name: install
+      run: npm install
+    - name: cleanup
+      run: rm -rf ~/.ssh
