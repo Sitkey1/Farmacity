@@ -20,6 +20,6 @@ jobs:
     - name: connect and pull
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.BUILD_DIR }} && git checkout ${{ secrets.BRANCH }} && git pull"
     - name: install
-      run: "cd ../ && cd Farmacity && ls && npm install"
+      run: "cd ../ && cd Farmacity/Farmacity && ls && npm install"
     - name: cleanup
       run: rm -rf ~/.ssh
