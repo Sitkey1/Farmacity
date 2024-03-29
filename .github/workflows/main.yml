@@ -18,7 +18,7 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
     - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.BUILD_DIR }} && git checkout ${{ secrets.BRANCH }} && git pull && npm run install && npm run build"
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.BUILD_DIR }} && git checkout ${{ secrets.BRANCH }} && git pull && npm install && npm run build"
     - name: move build folder
       run: mv build ../../var/www
     - name: cleanup
