@@ -1,0 +1,225 @@
+.product-section {
+  padding-bottom: 200px;
+  margin-top: -20px;
+  background-color: #fff;
+  .image-box {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 330px;
+    background-color: #fff;
+    border: 1px solid #01b641;
+    border-radius: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .wrapper-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .oldprice {
+      font-size: 12px;
+      text-align: end;
+      text-decoration: line-through;
+    }
+    .newprice {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: end;
+    }
+  }
+  .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    width: 80%;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #01b540;
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 8px 0px rgb(3 133 48);
+  }
+  button:hover {
+    background-color: #037c2e;
+  }
+  button:focus {
+    background-color: #037c2e;
+  }
+
+  .descr-box {
+    margin-top: 20px;
+    span {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .descr {
+      padding-bottom: 15px;
+      height: 200px;
+      overflow: auto;
+      color: #5b5b5b;
+      font-size: 9px;
+    }
+    .btn-rewiew {
+      margin-bottom: 50px;
+      margin-top: 15px;
+      padding: 8px;
+      color: #000;
+      width: 100%;
+      font-weight: bold;
+      font-size: 12px;
+      background-color: #fff;
+      border: 2px solid #01b641;
+      border-radius: 15px;
+    }
+  }
+  .rewiews-list {
+    li {
+      padding: 10px 0;
+      border-top: 1px solid #8a8787;
+      color: #5f5858;
+    }
+    .head {
+      color: #5f5858;
+      font-size: 10px;
+      span {
+        margin-right: 3px;
+        color: #5f5858;
+        font-weight: 300;
+        font-size: 10px;
+      }
+    }
+    p {
+      font-size: 8px;
+      text-align: left;
+      line-height: 9px;
+    }
+  }
+
+  .modal-send-rewiew {
+    .modal-overlay {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      .modal-form {
+        position: fixed;
+        bottom: 150px;
+        padding: 15px;
+        width: 100%;
+        background-color: #fff;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        span {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .form {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            height: 100px;
+            resize: none;
+            border-radius: 15px;
+            border: 1px solid #cacaca;
+            outline: none;
+          }
+          label {
+            position: relative;
+          }
+          span {
+            position: absolute;
+            left: 11px;
+            top: 5px;
+            font-size: 10px;
+            font-weight: normal;
+            color: #407bff;
+          }
+          input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 18px 5px 8px 10px;
+            border: 1px solid #cacaca;
+            border-radius: 15px;
+            outline: none;
+          }
+          button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 10px;
+            width: 60%;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            background-color: #01b540;
+            border-radius: 5px;
+            box-shadow: inset 0px 4px 8px 0px rgb(3 133 48);
+          }
+        }
+      }
+    }
+  }
+  .modal-success-send-rewiew {
+    .modal-overlay-answer {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      .modal-answer {
+        position: fixed;
+        bottom: 150px;
+        padding: 15px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+        span {
+          display: block;
+          font-weight: bold;
+          text-align: center;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          padding: 10px;
+          width: 60%;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+          font-size: 12px;
+          background-color: #ffb700;
+          border-radius: 20px;
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+header {
+  padding: 10px 5px 15px 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #141414;
+  background-image: linear-gradient(#ff9662, #ff752d);
+  border-top: 2px solid #045e18;
+  z-index: 2;
+  span {
+    color: #fff;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,28 @@
+.welcome-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(#fff, #ffffff, #ff752d);
+  z-index: 10;
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .logo-box {
+    margin-top: 50%;
+    img {
+      width: 230px;
+    }
+  }
+}

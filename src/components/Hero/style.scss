@@ -1,0 +1,22 @@
+.hero {
+  padding-bottom: 20px;
+  background-image: url(../../../public/image/backgroundlogo.png);
+  background-position: right 16px;
+  background-repeat: no-repeat;
+  background-size: 172px 162px;
+  .link-box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    display: flex;
+    text-align: center;
+  }
+  .link-box a {
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5c5757;
+    border-bottom: 1px solid #5c5757;
+  }
+}

@@ -1,0 +1,78 @@
+.contacts-section {
+  padding-bottom: 150px;
+  background-image: url(../../../public/image/backgroundlogo.png);
+  background-position: right 55px;
+  background-repeat: no-repeat;
+  background-size: 172px 162px;
+  .form-contacts {
+    margin-top: 20px;
+  }
+  .form {
+    .title-label {
+      position: relative;
+    }
+    .message-label {
+      position: relative;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      span {
+        margin-bottom: 10px;
+      }
+      .select {
+        margin-bottom: 25px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        outline: none;
+      }
+      textarea {
+        margin-bottom: 10px;
+        padding: 5px;
+        height: 100px;
+        resize: none;
+        border-radius: 15px;
+        border: 1px solid #cacaca;
+        outline: none;
+      }
+
+      span {
+        position: absolute;
+        left: 11px;
+        top: 5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: #407bff;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 18px 5px 8px 10px;
+        border: 1px solid #cacaca;
+        border-radius: 15px;
+        outline: none;
+      }
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 10px;
+      width: 60%;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      background-color: #01b540;
+      border-radius: 5px;
+      box-shadow: inset 0px 4px 8px 0px rgb(3 133 48);
+    }
+    button:hover {
+      background-color: #037c2e;
+    }
+    button:focus {
+      background-color: #037c2e;
+    }
+  }
+}

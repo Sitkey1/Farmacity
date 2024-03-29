@@ -1,0 +1,133 @@
+.basket-section {
+  padding-bottom: 20px;
+  background-image: url(../../../public/image/backgroundlogo.png);
+  background-position: 215px 0px;
+  background-repeat: no-repeat;
+  background-size: 172px 162px;
+  .carrito {
+    margin-bottom: 50px;
+  }
+  li {
+    margin-bottom: 30px;
+    display: flex;
+    .image-box {
+      margin-right: 15px;
+      padding: 10px;
+      width: 150px;
+      height: 110px;
+      border: 1px solid #01b641;
+      border-radius: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .wrapper-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      span {
+        display: block;
+        color: #5b5b5b;
+      }
+      .descr {
+        color: #5b5b5b;
+      }
+      .price {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+    .box {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .counter {
+      button {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 3px 22px;
+      }
+      span {
+        width: 15px;
+        text-align: center;
+        font-weight: 500;
+        display: inline-block;
+      }
+    }
+  }
+  .total-price {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 350px;
+    span {
+      margin-bottom: 10px;
+      color: #141414;
+    }
+    input {
+      margin-bottom: 20px;
+      padding: 10px;
+      outline: none;
+      border-radius: 10px;
+      // border: 1px solid #00c0ff;
+    }
+    button {
+      margin: 0 auto;
+      padding: 15px 10px;
+      width: 60%;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: #01b540;
+      border-radius: 10px;
+      box-shadow: inset 0px 4px 8px 0px rgb(3 133 48);
+    }
+    button:hover {
+      background-color: #037c2e;
+    }
+    button:focus {
+      background-color: #037c2e;
+    }
+  }
+}
+.modal {
+  display: none;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  color: #4a755b;
+
+  text-align: center;
+  h3 {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+  span {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  button {
+    padding: 3px 45px;
+    background-color: #fff;
+    color: #4a755b;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+}

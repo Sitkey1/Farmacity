@@ -1,0 +1,16 @@
+.input-error {
+  border: 1px solid red;
+}
+input {
+  width: 100%;
+  border: 2px solid green;
+}
+label {
+  .mask {
+    font-size: 11px;
+    color: #4a4949;
+  }
+  span {
+    font-weight: bold;
+  }
+}
